@@ -1,0 +1,51 @@
+extends base.pug
+block scripts 
+      script(src='/static/index.js')
+
+block style 
+        style
+          include ../static/style.css
+block content 
+    
+     section#introSection 
+      div Welcome to Rashmi's Dance Academy 
+      div.small Eat Sleep Dance Repeat
+
+     section#missionSection 
+        h1 Our Mission
+        div.card 
+           h3   Dance Perfection
+           div.card-box 
+               div.card-img 
+                   img(src="/static/image1.jpeg")
+               div.card-content 
+                   p This is the best dance academy of the universe
+        div.card 
+           h3   Dance the way you like
+           div.card-box 
+               div.card-img 
+                   img(src="/static/image2.jpg")
+               div.card-content 
+                   p This is the best dance academy of the universe
+        div.card 
+           h3   Expert Teaching
+           div.card-box 
+               div.card-img 
+                   img(src="/static/image3.jpg")
+               div.card-content 
+                   p This is the best dance academy of the universe
+
+     section#sponsorsSection 
+       h1 Our Sponsors 
+       div#sponsors  
+            img(src="/static/logoimage1.jpg",alt=" sponsor logo", class="spimage")
+            img(src="/static/logoimage2.png",alt=" sponsor logo", class="spimage")
+            img(src="/static/logoimage3 (2).jpg",alt=" sponsor logo", class="spimage")
+            img(src="/static/logoimage4.jpg",alt=" sponsor logo", class="spimage")
+
+
+
+          
+     script 
+         include ../static/index.js
+       
